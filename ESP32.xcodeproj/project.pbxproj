@@ -8,32 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		359F25F22D528257003C3A2B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 359F25F12D528257003C3A2B /* Alamofire */; };
+		359F260D2D52A2D1003C3A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359F26052D52A2D1003C3A2B /* Assets.xcassets */; };
+		359F260F2D52A2D1003C3A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359F260A2D52A2D1003C3A2B /* LaunchScreen.storyboard */; };
+		359F26102D52A2D1003C3A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F26042D52A2D1003C3A2B /* AppDelegate.swift */; };
+		359F26112D52A2D1003C3A2B /* WIFIColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F26062D52A2D1003C3A2B /* WIFIColorPicker.swift */; };
+		359F26122D52A2D1003C3A2B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F26082D52A2D1003C3A2B /* InitialViewController.swift */; };
+		359F26132D52A2D1003C3A2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F260B2D52A2D1003C3A2B /* SceneDelegate.swift */; };
+		359F26172D52B0A5003C3A2B /* BLColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F26162D52B0A5003C3A2B /* BLColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		359F25D32D528080003C3A2B /* ESP32.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESP32.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		359F26042D52A2D1003C3A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		359F26052D52A2D1003C3A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		359F26062D52A2D1003C3A2B /* WIFIColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIFIColorPicker.swift; sourceTree = "<group>"; };
+		359F26072D52A2D1003C3A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359F26082D52A2D1003C3A2B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		359F26092D52A2D1003C3A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		359F260B2D52A2D1003C3A2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		359F26162D52B0A5003C3A2B /* BLColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		359F25E52D528083003C3A2B /* Exceptions for "ESP32" folder in "ESP32" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 359F25D22D528080003C3A2B /* ESP32 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		359F25D52D528080003C3A2B /* ESP32 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				359F25E52D528083003C3A2B /* Exceptions for "ESP32" folder in "ESP32" target */,
-			);
-			path = ESP32;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		359F25D02D528080003C3A2B /* Frameworks */ = {
@@ -50,7 +44,7 @@
 		359F25CA2D528080003C3A2B = {
 			isa = PBXGroup;
 			children = (
-				359F25D52D528080003C3A2B /* ESP32 */,
+				359F260C2D52A2D1003C3A2B /* ESP32 */,
 				359F25D42D528080003C3A2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +55,37 @@
 				359F25D32D528080003C3A2B /* ESP32.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		359F260C2D52A2D1003C3A2B /* ESP32 */ = {
+			isa = PBXGroup;
+			children = (
+				359F26142D52A2D8003C3A2B /* LifeCycle */,
+				359F26052D52A2D1003C3A2B /* Assets.xcassets */,
+				359F26072D52A2D1003C3A2B /* Info.plist */,
+				359F26152D52B076003C3A2B /* Scenes */,
+			);
+			path = ESP32;
+			sourceTree = "<group>";
+		};
+		359F26142D52A2D8003C3A2B /* LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				359F26042D52A2D1003C3A2B /* AppDelegate.swift */,
+				359F260B2D52A2D1003C3A2B /* SceneDelegate.swift */,
+			);
+			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		359F26152D52B076003C3A2B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				359F260A2D52A2D1003C3A2B /* LaunchScreen.storyboard */,
+				359F26082D52A2D1003C3A2B /* InitialViewController.swift */,
+				359F26062D52A2D1003C3A2B /* WIFIColorPicker.swift */,
+				359F26162D52B0A5003C3A2B /* BLColorPicker.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +102,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				359F25D52D528080003C3A2B /* ESP32 */,
 			);
 			name = ESP32;
 			packageProductDependencies = (
@@ -131,6 +153,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359F260D2D52A2D1003C3A2B /* Assets.xcassets in Resources */,
+				359F260F2D52A2D1003C3A2B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +165,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359F26102D52A2D1003C3A2B /* AppDelegate.swift in Sources */,
+				359F26112D52A2D1003C3A2B /* WIFIColorPicker.swift in Sources */,
+				359F26172D52B0A5003C3A2B /* BLColorPicker.swift in Sources */,
+				359F26122D52A2D1003C3A2B /* InitialViewController.swift in Sources */,
+				359F26132D52A2D1003C3A2B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		359F260A2D52A2D1003C3A2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				359F26092D52A2D1003C3A2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		359F25E72D528083003C3A2B /* Debug */ = {
